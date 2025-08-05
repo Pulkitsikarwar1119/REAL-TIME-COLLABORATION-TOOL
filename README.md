@@ -1,3 +1,99 @@
+# REAL TIME COLLABORATION TOOL
+
+COMPANY : CODTECH IT SOLUTIONS
+
+NAME  : PULKIT SIKARWAR
+
+INTERN ID  :CT08DF482
+
+DOMAIN  : MERN STACK WEB DEVELOPMENT
+
+DURATION :8 WEEKS
+
+MENTOR : NEELA SANTOSH
+
+## DESCRIPTION OF TASK
+
+Objective:
+The purpose of this task was to build a Real-Time Collaboration Tool using the MERN stack (MongoDB, Express.js, React.js, Node.js) integrated with WebSockets (Socket.IO) to allow multiple users to simultaneously edit or interact within a shared environment—such as a document editor or whiteboard—synchronized in real time.
+
+⚙️ Tech Stack
+
+MongoDB – NoSQL database for storing collaborative data like user sessions, document contents, or history.
+
+Express.js – Backend server to handle RESTful routes, API endpoints, and WebSocket connections.
+
+React.js – Frontend for building an interactive and real-time UI.
+
+Node.js – Runtime environment for executing server-side JavaScript.
+
+Socket.IO – Enables bi-directional, event-based communication for real-time collaboration.
+
+Canvas API (for whiteboard) – Used on the frontend to build a drawing tool for collaboration.
+
+📁 Project Structure
+
+bash
+Copy
+Edit
+Task-3-Real-Time-Collaboration/
+
+├── backend/
+│   ├── server.js             # Express server and socket setup
+│   └── models/Document.js    # MongoDB schema for storing document/whiteboard data
+├── frontend/
+│   ├── src/
+│   │   ├── Editor.jsx        # Shared document editor component
+│   │   ├── Whiteboard.jsx    # Collaborative drawing component
+│   │   ├── Editor.css        # Styling and background
+│   │   └── App.js            # Main React entry point
+💻 Functionalities Implemented
+
+Real-Time Text Editing: Multiple users can edit text in a shared document. All changes are instantly broadcast to others using WebSocket events.
+
+Live Whiteboard: A canvas-based whiteboard allows users to draw or sketch together. Mouse events are transmitted in real time using Socket.IO.
+
+Socket.IO Integration: Events like text_change, draw, connect, and disconnect ensure all users remain synchronized.
+
+UI Enhancements: A background image (editor.jpg) and organized layout were applied for a modern editor interface.
+
+🔌 Backend Features
+
+Express and Socket.IO handle client connections and broadcast changes.
+
+MongoDB can optionally store document contents to support persistence and multi-session editing.
+
+Clean-up logic ensures socket events don't stack or duplicate across sessions.
+
+🖥️ Frontend Features
+
+Built in React using functional components and hooks (useState, useEffect, useRef).
+
+Editor and whiteboard are placed inside a styled container.
+
+Background image, font styles, and spacing were applied for a clean workspace.
+
+Dynamic socket-based communication ensures live collaboration.
+
+🚀 How to Run the App
+Start the backend:
+
+bash
+
+cd backend
+npm install
+node server.js
+Start the frontend:
+
+bash
+
+cd frontend
+npm install
+npm start
+Test Collaboration:
+
+Open the app in multiple tabs or devices. Edits and drawings from one window should appear in others instantly.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -66,5 +162,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
+
+## OUTPUT 
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
