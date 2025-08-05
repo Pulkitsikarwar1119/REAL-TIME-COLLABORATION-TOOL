@@ -1,0 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('./assets/bg-editor.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.editor-wrapper.split {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.editor-container, .whiteboard-container {
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.editor-container {
+  width: 500px;
+}
+
+.whiteboard-container {
+  width: 520px;
+  text-align: center;
+}
+
+canvas {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: crosshair;
+}
